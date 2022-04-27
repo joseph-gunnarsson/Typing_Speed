@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.App{
+  color: #302932;
+  display: flex;
+  height: 100%;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Paragraph and Typing Test colours  */
+.TypingBlock{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width:750px;
+  background-color: #8B8E8B;
+  border-radius: 25px;
+  padding: 25px;
+  margin: 25px;
+}
+.TypingBlock > p{
+  color:#EAEAEA;
+  user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+      font-size: 25px;
+      text-align: justify;
+}
+.HideScroll{
+  padding: 15px;
+  border-radius: 25px;
+  width: 600px;
+  height: 100px;
+  font-size: 20px;
+  background-color: #FAFAFA;
+}
+.HideScroll > textarea{
+  resize: none;
+  font-size: 20px;
+  background-color: #FAFAFA;
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+}
+
+::-webkit-scrollbar-button {
+  height: 1px;
+}
+span.correct{
+  background-color: #2ECC40;
+  color: #FFFFFF;
+}
+
+span.incorrect{
+  background-color: red;
+  color: black;
+}
+/* Stats */
+.Stats{
+  align-self: stretch;
+}
+.Stats > ul{
+  margin: 20px;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: center;
+}
+
+.Stats >ul>li>button {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.Stats >ul>li>button:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.Stats >ul>li>button:active {
+	position:relative;
+	top:1px;
+}
+
+.Stats >ul>li{
+  font-weight: bold;
+}
+
+
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+
+  background-clip: padding-box;
+  background: none; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+
+  background: #555; 
+}
+
+/* Current Stats */
+.CurrentStats{
+  display: flex;
+  justify-content:space-between;
+  width: 500px;
+  margin: 10px;
+  border-radius:10px ;
+  padding: 3px 10px 3px 10px;
+  background-color: #EAEAEA;
+  font-weight: bold;
+}
+
+/* breakdown */
+
+.BreakdownBox{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Breakdown{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #EAEAEA;
+  width: 200px;
+  background-color: #302932;
+  padding: 15px;
+}
+.Breakdown h3,h4{
+  margin: 0;
+}
+.Breakdown ul{
+  padding: 0;
+}
+.Breakdown >ul>li{
+  list-style-type: none;
+}
