@@ -44,7 +44,7 @@ export default function TestingBlock(){
   
     const  updatePara=async()=>{
             pause()
-            let response = await fetch("https://metaphorpsum.com/paragraphs/1/5")
+            let response = await fetch("http://metaphorpsum.com/paragraphs/1/5")
             response = await response.text()
             console.log(response)
             setTestText("")
